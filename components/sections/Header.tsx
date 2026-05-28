@@ -66,7 +66,7 @@ export default function Header() {
               className="flex items-center gap-3 group"
               aria-label="Atabekov — bosh sahifa"
             >
-              <div className="relative w-10 h-10 rounded-xl overflow-hidden shadow-md group-hover:shadow-gold transition-all duration-300">
+              <div className="relative w-12 h-12 transition-transform duration-300 group-hover:scale-105">
                 <Image
                   src="/atabekov_logo.png"
                   alt="Atabekov logotipi"
@@ -76,10 +76,10 @@ export default function Header() {
                 />
               </div>
               <div className="flex flex-col leading-none">
-                <span className="font-serif font-bold text-lg text-primary tracking-tight">
+                <span className="font-serif font-bold text-xl text-primary tracking-tight">
                   ATABEKOV
                 </span>
-                <span className="text-[10px] tracking-[0.15em] uppercase text-text-muted font-medium">
+                <span className="text-[10px] tracking-[0.15em] uppercase text-text-muted font-medium mt-0.5">
                   Kolbasa Zavodi
                 </span>
               </div>

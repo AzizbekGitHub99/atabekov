@@ -66,20 +66,18 @@ export default function Hero() {
                 </span>
                 <Star size={13} className="text-accent fill-accent" />
               </div>
-            </div>
-
-            {/* Headline */}
+            </div>            {/* Headline */}
             <h1 className="font-serif font-black leading-[0.95] tracking-tighter mb-6">
-              <span className="block text-5xl sm:text-6xl lg:text-7xl text-text-main dark:text-text-dark">
+              <span className="block text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-text-main dark:text-text-dark">
                 {t.hero.titleLine1}
               </span>
-              <span className="block text-6xl sm:text-7xl lg:text-8xl gradient-text">
+              <span className="block text-4xl sm:text-6xl md:text-7xl lg:text-8xl gradient-text">
                 {t.hero.titleLine2}
               </span>
-              <span className="block text-5xl sm:text-6xl lg:text-7xl text-text-main dark:text-text-dark">
+              <span className="block text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-text-main dark:text-text-dark">
                 {t.hero.titleLine3}
               </span>
-              <span className="block text-3xl sm:text-4xl lg:text-5xl text-text-muted dark:text-text-dark-muted font-medium italic mt-2">
+              <span className="block text-xl sm:text-3xl md:text-4xl lg:text-5xl text-text-muted dark:text-text-dark-muted font-medium italic mt-2">
                 {t.hero.titleEnd}
               </span>
             </h1>
@@ -110,17 +108,17 @@ export default function Hero() {
             </div>
 
             {/* Trust indicators */}
-            <div className="flex items-center gap-6">
+            <div className="flex flex-wrap items-center gap-y-4 gap-x-6">
               {[
                 { value: '25+', label: "Yil tajriba" },
                 { value: '100%', label: "Halol" },
-                { value: '50+', label: "Mahsulot" },
+                { value: '50%', label: "Mahsulot" },
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-3">
-                  {i > 0 && <div className="w-px h-8 bg-border-light dark:bg-border-dark" />}
+                  {i > 0 && <div className="hidden sm:block w-px h-8 bg-border-light dark:bg-border-dark" />}
                   <div>
                     <div className="font-serif font-bold text-xl text-accent">{item.value}</div>
-                    <div className="text-xs text-text-muted dark:text-text-dark-muted">{item.label}</div>
+                    <div className="text-xs text-text-muted dark:text-text-dark-muted whitespace-nowrap">{item.label}</div>
                   </div>
                 </div>
               ))}

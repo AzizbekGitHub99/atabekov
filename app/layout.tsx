@@ -27,6 +27,11 @@ export const metadata: Metadata = {
     'uzbekistan', 'kolbasa', 'go\'sht', 'halal', 'sausage', 'meat',
   ],
   authors: [{ name: 'Atabekov' }],
+  icons: {
+    icon: '/atabekov_logo.png',
+    shortcut: '/atabekov_logo.png',
+    apple: '/atabekov_logo.png',
+  },
   openGraph: {
     title: 'Atabekov - Premium Halol Go\'sht Mahsulotlari',
     description: 'O\'zbekistonning №1 premium halol kolbasa zavodi. 25+ yillik tajriba.',

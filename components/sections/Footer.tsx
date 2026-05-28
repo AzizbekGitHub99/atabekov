@@ -55,7 +55,7 @@ export default function Footer() {
               className="flex items-center gap-3 group text-left"
               aria-label="Atabekov — bosh sahifa"
             >
-              <div className="relative w-12 h-12 rounded-2xl overflow-hidden shadow-md group-hover:shadow-gold transition-all duration-300">
+              <div className="relative w-14 h-14 transition-transform duration-300 group-hover:scale-105">
                 <Image
                   src="/atabekov_logo.png"
                   alt="Atabekov logotipi"
@@ -64,10 +64,10 @@ export default function Footer() {
                 />
               </div>
               <div className="flex flex-col leading-none">
-                <span className="font-serif font-black text-xl text-primary tracking-tight">
+                <span className="font-serif font-black text-2xl text-primary tracking-tight">
                   ATABEKOV
                 </span>
-                <span className="text-[10px] tracking-[0.18em] uppercase text-text-muted font-bold mt-0.5">
+                <span className="text-[10px] tracking-[0.18em] uppercase text-text-muted font-bold mt-1">
                   Kolbasa Zavodi
                 </span>
               </div>

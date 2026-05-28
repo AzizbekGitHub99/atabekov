@@ -249,7 +249,7 @@ export default function Contact() {
             id="contact-map"
             title={t.contact.mapLabel}
             src="https://maps.google.com/maps?q=41.373637,69.303102&t=&z=16&ie=UTF8&iwloc=&output=embed"
-            className="h-[450px] w-full"
+            className="h-[300px] sm:h-[450px] w-full"
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
