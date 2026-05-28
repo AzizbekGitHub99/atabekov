@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { useLang } from '@/context/LangContext'
-import { MapPin, Phone, Mail, Clock, Send, CheckCircle2, Instagram, Facebook } from 'lucide-react'
+import { MapPin, Phone, Mail, Clock, Send, CheckCircle2, Instagram, Facebook, ExternalLink } from 'lucide-react'
 
 function useScrollReveal() {
   const ref = useRef<HTMLDivElement>(null)
@@ -28,6 +28,7 @@ export default function Contact() {
   const [form, setForm] = useState({ name: '', phone: '', message: '' })
   const [sent, setSent] = useState(false)
   const [loading, setLoading] = useState(false)
+  const mapUrl = 'https://maps.app.goo.gl/ApmyBHUtSWpKQmVo9'
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -103,6 +104,19 @@ export default function Contact() {
                   </div>
                 ))}
               </div>
+
+              <a
+                href={mapUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                id="contact-map-link"
+                className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-5 py-3 text-sm font-semibold text-accent transition-all duration-300 hover:-translate-y-0.5 hover:border-accent hover:bg-accent/15 hover:shadow-gold"
+                aria-label={t.contact.mapLabel}
+              >
+                <MapPin size={16} />
+                {t.contact.mapLabel}
+                <ExternalLink size={14} />
+              </a>
             </div>
 
             {/* Social / extra */}
