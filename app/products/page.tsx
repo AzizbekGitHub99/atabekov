@@ -20,10 +20,7 @@ export default function ProductsPage() {
   // Filter products based on category and search query
   const filteredProducts = t.products.items.filter((item) => {
     const matchesCategory = selectedCategory === 'all' || item.category === selectedCategory
-    const matchesSearch =
-      item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      item.desc.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      item.ingredients.toLowerCase().includes(searchQuery.toLowerCase())
+    const matchesSearch = item.name.toLowerCase().includes(searchQuery.toLowerCase())
     return matchesCategory && matchesSearch
   })
 

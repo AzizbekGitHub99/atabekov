@@ -148,7 +148,7 @@ export default function Hero() {
               <div className="relative aspect-square animate-float">
                 <div className="relative w-full h-full rounded-[40%_60%_70%_30%/40%_50%_60%_50%] overflow-hidden shadow-2xl border border-white/20">
                   <Image
-                    src="https://images.unsplash.com/photo-1558030006-450675393462?w=700&q=80"
+                    src="/hero_sausage.png"
                     alt="Atabekov premium kolbasa mahsuloti"
                     fill
                     className="object-cover"

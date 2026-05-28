@@ -60,7 +60,7 @@
         "shelf": "15 дней",
         "ingredients": "Говядина, специи, натуральная оболочка",
         "desc": "Классическая и вкусная, украшение любого стола.",
-        "image": "https://images.unsplash.com/photo-1541518763669-27fef04b14ea?w=600&q=80"
+        "image": "/doctor_sausage.png"
       },
       {
         "id": 2,
@@ -71,7 +71,7 @@
         "shelf": "20 дней",
         "ingredients": "Баранина, специи, натуральная оболочка",
         "desc": "Премиальная сухая колбаса в итальянском стиле.",
-        "image": "https://images.unsplash.com/photo-1558030006-450675393462?w=600&q=80"
+        "image": "/premium_servelat.png"
       },
       {
         "id": 3,
@@ -82,7 +82,7 @@
         "shelf": "10 дней",
         "ingredients": "100% баранина, лук, специи",
         "desc": "Традиционный узбекский вкус, сочные и ароматные.",
-        "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80"
+        "image": "/lamb_sausage.png"
       },
       {
         "id": 4,
@@ -93,7 +93,7 @@
         "shelf": "7 дней",
         "ingredients": "Премиальная говядина, соль, специи",
         "desc": "Готов для гриля, премиальное качество.",
-        "image": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=600&q=80"
+        "image": "/beef_steak.png"
       },
       {
         "id": 5,
@@ -104,7 +104,7 @@
         "shelf": "12 дней",
         "ingredients": "Смешанное мясо, чеснок, натуральная оболочка",
         "desc": "Приготовлена по домашнему рецепту, традиционный вкус.",
-        "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80"
+        "image": "/home_sausage.png"
       },
       {
         "id": 6,
@@ -115,9 +115,89 @@
         "shelf": "14 дней",
         "ingredients": "Говядина и баранина, копченые, натуральные",
         "desc": "Любимые детьми и взрослыми, классический вкус.",
-        "image": "https://images.unsplash.com/photo-1432139509613-5c4255815697?w=600&q=80"
+        "image": "/frankfurt_sausage.png"
+      },
+      {
+        "id": 7,
+        "category": "smoked",
+        "name": "Колбаса Салями",
+        "weight": "350г",
+        "calories": "380 ккал/100г",
+        "shelf": "25 дней",
+        "ingredients": "Говядина, чеснок, ароматные перцы",
+        "desc": "Премиальная копченая салями с ароматом копчения.",
+        "image": "/salami_sausage.png"
+      },
+      {
+        "id": 8,
+        "category": "boiled",
+        "name": "Колбаса Московская",
+        "weight": "400г",
+        "calories": "290 ккал/100г",
+        "shelf": "15 дней",
+        "ingredients": "Отборная говядина, молоко, специальные специи",
+        "desc": "Вареная колбаса, приготовленная по традиционному рецепту.",
+        "image": "/moscow_sausage.png"
+      },
+      {
+        "id": 9,
+        "category": "sausages",
+        "name": "Детские Сосиски",
+        "weight": "300г",
+        "calories": "195 ккал/100г",
+        "shelf": "10 дней",
+        "ingredients": "Говядина, натуральное молоко, мягкие специи",
+        "desc": "Легкий и нежный вкус, любимый детьми.",
+        "image": "/kid_sausage.png"
+      },
+      {
+        "id": 10,
+        "category": "grill",
+        "name": "Сосиски для Гриля",
+        "weight": "450г",
+        "calories": "285 ккал/100г",
+        "shelf": "12 дней",
+        "ingredients": "Говядина, сладкий перец, сыр",
+        "desc": "Сосиски для приготовления на природе или гриле.",
+        "image": "/grill_sausage.png"
+      },
+      {
+        "id": 11,
+        "category": "smoked",
+        "name": "Копченый Говяжий Язык",
+        "weight": "300г",
+        "calories": "220 ккал/100г",
+        "shelf": "18 дней",
+        "ingredients": "Говяжий язык, соль, специи, натуральный дым",
+        "desc": "Настоящий мясной деликатес, нежный и изысканный.",
+        "image": "/smoked_tongue.png"
+      },
+      {
+        "id": 12,
+        "category": "boiled",
+        "name": "Рулет из Индейки",
+        "weight": "500г",
+        "calories": "160 ккал/100г",
+        "shelf": "14 дней",
+        "ingredients": "Мясо индейки, зелень, чеснок, соль",
+        "desc": "Диетический и легкий премиум рулет из мяса индейки.",
+        "image": "/turkey_roll.png"
       }
-    ]
+    ],
+    "single": {
+      "backBtn": "Назад",
+      "storage": "Условия хранения",
+      "storageValue": "Хранить при температуре от 0°C до +6°C",
+      "certifications": "Сертификаты",
+      "certificationsValue": "ISO 9001, ISO 22000, 100% Халяль",
+      "delivery": "Доставка",
+      "deliveryValue": "Быстрая доставка по Ташкенту в течение 24 часов",
+      "ingredientsLabel": "Состав продукта",
+      "shelfLabel": "Срок хранения",
+      "caloriesLabel": "Энергетическая ценность",
+      "weightLabel": "Вес нетто",
+      "orderCta": "Заказать (Контакты)"
+    }
   },
   "advantages": {
     "tag": "Почему мы?",
@@ -162,7 +242,7 @@
     "sendBtn": "Отправить",
     "address": "г. Ташкент, Юнусабадский район, 14-квартал, д. 23",
     "mapLabel": "Открыть на карте",
-    "phone": "+998 71 123 45 67",
+    "phone": "+998 33 914 22 22",
     "email": "info@atabekov.uz",
     "workHours": "Пн-Сб: 08:00-18:00"
   },

@@ -241,14 +241,34 @@ body {
 .product-card-image {
   position: relative;
   overflow: hidden;
-  transition: transform 0.4s ease;
 }
 
-.product-card-details {
+.product-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   display: flex;
   flex-direction: column;
-  height: auto;
+  justify-content: center;
+  padding: 1.25rem;
+  z-index: 20;
+  opacity: 0;
+  transform: translate3d(0, 100%, 0);
+  transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  border-radius: 1rem;
+  overflow: hidden;
+  will-change: transform;
+}
+
+.product-card:hover .product-card-overlay {
   opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.dark .product-card-overlay {
+  background: rgba(11, 11, 12, 0.75);
 }
 
 /* ─── Halol Badge ────────────────────────────── */

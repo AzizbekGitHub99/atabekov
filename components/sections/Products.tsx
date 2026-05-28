@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { ArrowRight, Scale, Flame, Clock3, ListChecks, ShoppingBag } from 'lucide-react'
 import { useLang, type Translations } from '@/context/LangContext'
 import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 
 function useScrollReveal() {
   const ref = useRef<HTMLDivElement>(null)
@@ -37,13 +38,14 @@ export function ProductCard({ item, index, t }: { item: ProductItem; index: numb
   const [hovered, setHovered] = useState(false)
 
   return (
-    <div
-      className={`product-card stagger-${(index % 3) + 1}`}
+    <Link
+      href={`/products/${item.id}`}
+      className={`product-card group stagger-${(index % 3) + 1}`}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
       {/* Image frame */}
-      <div className="product-card-image pt-5 px-5">
+      <div className="product-card-image pt-5 px-5 relative">
         <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-md">
           <Image
             src={item.image}
@@ -55,8 +57,31 @@ export function ProductCard({ item, index, t }: { item: ProductItem; index: numb
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
 
           {/* Halal badge */}
-          <div className="absolute top-3 left-3">
+          <div className="absolute top-3 left-3 z-30">
             <span className="halal-badge">{t.products.halal}</span>
+          </div>
+
+          {/* Blurred overlay specifications list */}
+          <div className="product-card-overlay rounded-2xl">
+            <div className="flex flex-col gap-1.5 text-white w-full">
+              {[
+                { icon: Scale, label: t.products.weight, value: item.weight },
+                { icon: Flame, label: t.products.calories, value: item.calories },
+                { icon: Clock3, label: t.products.shelf, value: item.shelf },
+                { icon: ListChecks, label: t.products.ingredients, value: item.ingredients },
+              ].map(({ icon: Icon, label, value }, i) => (
+                <div
+                  key={i}
+                  className="flex items-center justify-between gap-3 px-3 py-1.5 rounded-xl bg-white/10 border border-white/10 hover:bg-white/15 transition-colors duration-200"
+                >
+                  <div className="flex items-center gap-2 overflow-hidden min-w-0">
+                    <Icon size={13} className="text-accent flex-shrink-0" />
+                    <span className="text-[9px] text-white/70 uppercase tracking-wider font-semibold truncate">{label}</span>
+                  </div>
+                  <span className="text-[11px] font-bold text-white truncate max-w-[55%] ml-2">{value}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -67,44 +92,12 @@ export function ProductCard({ item, index, t }: { item: ProductItem; index: numb
           <h3 className="font-serif font-bold text-xl text-text-main dark:text-text-dark mb-1 group-hover:text-primary transition-colors">
             {item.name}
           </h3>
-          <p className="text-xs text-text-muted dark:text-text-dark-muted mb-4 leading-relaxed line-clamp-2 min-h-[32px]">
+          <p className="text-xs text-text-muted dark:text-text-dark-muted mb-1 leading-relaxed line-clamp-2 min-h-[32px]">
             {item.desc}
           </p>
-
-          {/* Details Grid */}
-          <div className="product-card-details mb-4">
-            <div className="grid grid-cols-2 gap-2">
-              {[
-                { icon: Scale, label: t.products.weight, value: item.weight },
-                { icon: Flame, label: t.products.calories, value: item.calories },
-                { icon: Clock3, label: t.products.shelf, value: item.shelf },
-                { icon: ListChecks, label: t.products.ingredients, value: item.ingredients },
-              ].map(({ icon: Icon, label, value }, i) => (
-                <div
-                  key={i}
-                  className="flex items-start gap-1.5 p-2 rounded-xl bg-bg-main dark:bg-bg-dark border border-border-light dark:border-border-dark"
-                >
-                  <Icon size={13} className="text-accent mt-0.5 flex-shrink-0" />
-                  <div className="overflow-hidden">
-                    <div className="text-[9px] text-text-muted dark:text-text-dark-muted uppercase tracking-wider truncate">{label}</div>
-                    <div className="text-xs font-bold text-text-main dark:text-text-dark leading-tight truncate">{value}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
-
-        <button
-          id={`order-btn-${item.id}`}
-          className="btn-primary w-full justify-center text-xs py-2.5 font-semibold"
-        >
-          <ShoppingBag size={14} />
-          {t.products.orderBtn}
-          <ArrowRight size={12} className="btn-arrow ml-auto" />
-        </button>
       </div>
-    </div>
+    </Link>
   )
 }
 

@@ -60,7 +60,7 @@
         "shelf": "15 kun",
         "ingredients": "Mol go'shti, ziravorlar, tabiiy qobiq",
         "desc": "Klassik va mazali, har bir dasturxonning ko'rki.",
-        "image": "https://images.unsplash.com/photo-1541518763669-27fef04b14ea?w=600&q=80"
+        "image": "/doctor_sausage.png"
       },
       {
         "id": 2,
@@ -71,7 +71,7 @@
         "shelf": "20 kun",
         "ingredients": "Qo'y go'shti, ziravorlar, natural qobiq",
         "desc": "Italyan uslubidagi premium quruq kolbasa.",
-        "image": "https://images.unsplash.com/photo-1558030006-450675393462?w=600&q=80"
+        "image": "/premium_servelat.png"
       },
       {
         "id": 3,
@@ -82,7 +82,7 @@
         "shelf": "10 kun",
         "ingredients": "100% qo'y go'shti, piyoz, ziravorlar",
         "desc": "An'anaviy o'zbek ta'mida, sharbatli va mazali.",
-        "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80"
+        "image": "/lamb_sausage.png"
       },
       {
         "id": 4,
@@ -93,7 +93,7 @@
         "shelf": "7 kun",
         "ingredients": "Premium mol go'shti, tuz, ziravorlar",
         "desc": "To'g'ridan-to'g'ri grill uchun tayyor, premium sifat.",
-        "image": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=600&q=80"
+        "image": "/beef_steak.png"
       },
       {
         "id": 5,
@@ -104,7 +104,7 @@
         "shelf": "12 kun",
         "ingredients": "Aralash go'sht, sarimsoq, tabiiy qobiq",
         "desc": "Uy lazzatida tayyorlangan, an'anaviy retsept.",
-        "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80"
+        "image": "/home_sausage.png"
       },
       {
         "id": 6,
@@ -115,9 +115,89 @@
         "shelf": "14 kun",
         "ingredients": "Mol va qo'y go'shti, dudlangan, natural",
         "desc": "Bolalar va kattalarga maqbul, klassik ta'm.",
-        "image": "https://images.unsplash.com/photo-1432139509613-5c4255815697?w=600&q=80"
+        "image": "/frankfurt_sausage.png"
+      },
+      {
+        "id": 7,
+        "category": "smoked",
+        "name": "Salyami Kolbasa",
+        "weight": "350g",
+        "calories": "380 kcal/100g",
+        "shelf": "25 kun",
+        "ingredients": "Mol go'shti, sarimsoq, xushbo'y murchlar",
+        "desc": "Premium dudlangan salyami kolbasi, dud hidi bilan.",
+        "image": "/salami_sausage.png"
+      },
+      {
+        "id": 8,
+        "category": "boiled",
+        "name": "Moskva Kolbasa",
+        "weight": "400g",
+        "calories": "290 kcal/100g",
+        "shelf": "15 kun",
+        "ingredients": "Tanlangan mol go'shti, sut, maxsus ziravorlar",
+        "desc": "An'anaviy retsept bo'yicha tayyorlangan pishirilgan kolbasa.",
+        "image": "/moscow_sausage.png"
+      },
+      {
+        "id": 9,
+        "category": "sausages",
+        "name": "Bolajon Sosiskasi",
+        "weight": "300g",
+        "calories": "195 kcal/100g",
+        "shelf": "10 kun",
+        "ingredients": "Mol go'shti, tabiiy sut, shirin ziravorlar",
+        "desc": "Yengil va mazali, bolajonlar uchun sevimli ta'm.",
+        "image": "/kid_sausage.png"
+      },
+      {
+        "id": 10,
+        "category": "grill",
+        "name": "Grill Sosiskasi",
+        "weight": "450g",
+        "calories": "285 kcal/100g",
+        "shelf": "12 kun",
+        "ingredients": "Mol go'shti, shirin qalampir, pishloq",
+        "desc": "Tabiat qo'ynida yoki grillda tayyorlash uchun sosiska.",
+        "image": "/grill_sausage.png"
+      },
+      {
+        "id": 11,
+        "category": "smoked",
+        "name": "Dudlangan Mol Tili",
+        "weight": "300g",
+        "calories": "220 kcal/100g",
+        "shelf": "18 kun",
+        "ingredients": "Mol tili, tuz, ziravorlar, tabiiy tut",
+        "desc": "Haqiqiy go'sht delikatesi, nozik va lazzatli.",
+        "image": "/smoked_tongue.png"
+      },
+      {
+        "id": 12,
+        "category": "boiled",
+        "name": "Kurka Ruleti",
+        "weight": "500g",
+        "calories": "160 kcal/100g",
+        "shelf": "14 kun",
+        "ingredients": "Kurka go'shti, ko'katlar, sarimsoq, tuz",
+        "desc": "Parhezbop va yengil premium kurka go'shti ruleti.",
+        "image": "/turkey_roll.png"
       }
-    ]
+    ],
+    "single": {
+      "backBtn": "Ortga qaytish",
+      "storage": "Saqlash sharoiti",
+      "storageValue": "0°C dan +6°C gacha bo'lgan haroratda saqlang",
+      "certifications": "Sertifikatlar",
+      "certificationsValue": "ISO 9001, ISO 22000, 100% Halol",
+      "delivery": "Yetkazib berish",
+      "deliveryValue": "Toshkent shahar bo'ylab 24 soat ichida tezkor yetkazib berish",
+      "ingredientsLabel": "Mahsulot tarkibi",
+      "shelfLabel": "Saqlash muddati",
+      "caloriesLabel": "Energetik qiymati",
+      "weightLabel": "Netto og'irligi",
+      "orderCta": "Buyurtma berish (Aloqa)"
+    }
   },
   "advantages": {
     "tag": "Nima uchun biz?",
@@ -125,12 +205,30 @@
     "titleAccent": "Afzalliklarimiz",
     "subtitle": "Sifat va ishonch — bizning tasdiqlangan va'damiz.",
     "items": [
-      { "title": "100% Halol", "desc": "Barcha mahsulotlar islomiy standartlarga muvofiq, maxsus nazorat ostida tayyorlanadi." },
-      { "title": "Tabiiy Tarkib", "desc": "Sun'iy bo'yoq va konservantlarsiz, faqat tabiiy xom ashyo va ziravorlar ishlatiladi." },
-      { "title": "Sovuq Zanjir", "desc": "Zavoddan dasturxoningizgacha uzluksiz sovuq zanjir saqlanib, sifat ta'minlanadi." },
-      { "title": "ISO Sertifikat", "desc": "Xalqaro ISO sifat standartlariga javob beradigan zamonaviy ishlab chiqarish texnologiyasi." },
-      { "title": "Tez Yetkazish", "desc": "Toshkent bo'ylab 24 soat ichida eshigingizgacha yetkazib berish xizmati mavjud." },
-      { "title": "25+ Yil Tajriba", "desc": "Chorak asrdan ko'proq vaqt davomida O'zbekistonning ishonchli go'sht zavodi." }
+      {
+        "title": "100% Halol",
+        "desc": "Barcha mahsulotlar islomiy standartlarga muvofiq, maxsus nazorat ostida tayyorlanadi."
+      },
+      {
+        "title": "Tabiiy Tarkib",
+        "desc": "Sun'iy bo'yoq va konservantlarsiz, faqat tabiiy xom ashyo va ziravorlar ishlatiladi."
+      },
+      {
+        "title": "Sovuq Zanjir",
+        "desc": "Zavoddan dasturxoningizgacha uzluksiz sovuq zanjir saqlanib, sifat ta'minlanadi."
+      },
+      {
+        "title": "ISO Sertifikat",
+        "desc": "Xalqaro ISO sifat standartlariga javob beradigan zamonaviy ishlab chiqarish texnologiyasi."
+      },
+      {
+        "title": "Tez Yetkazish",
+        "desc": "Toshkent bo'ylab 24 soat ichida eshigingizgacha yetkazib berish xizmati mavjud."
+      },
+      {
+        "title": "25+ Yil Tajriba",
+        "desc": "Chorak asrdan ko'proq vaqt davomida O'zbekistonning ishonchli go'sht zavodi."
+      }
     ]
   },
   "contact": {
@@ -142,9 +240,9 @@
     "phonePlaceholder": "+998 __ ___ __ __",
     "messagePlaceholder": "Xabaringiz yoki buyurtmangiz...",
     "sendBtn": "Yuborish",
-    "address": "Toshkent sh., Yunusobod tumani, 14-mavze, 23-uy",
+    "address": "Toshkent sh., Chilonzorobod tumani, 14-mavze, 23-uy",
     "mapLabel": "Xaritada ko'rish",
-    "phone": "+998 71 123 45 67",
+    "phone": "+998 33 914 22 22",
     "email": "info@atabekov.uz",
     "workHours": "Dush–Shan: 08:00–18:00"
   },

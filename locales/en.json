@@ -51,13 +51,153 @@
       "grill": "Grill & BBQ"
     },
     "items": [
-      { "id": 1, "category": "boiled", "name": "Doctor Sausage", "weight": "500g", "calories": "257 kcal/100g", "shelf": "15 days", "ingredients": "Beef, spices, natural casing", "desc": "Classic and delicious, the centerpiece of any table.", "image": "https://images.unsplash.com/photo-1541518763669-27fef04b14ea?w=600&q=80" },
-      { "id": 2, "category": "smoked", "name": "Premium Cervelat", "weight": "300g", "calories": "320 kcal/100g", "shelf": "20 days", "ingredients": "Lamb, spices, natural casing", "desc": "Italian-style premium dry sausage.", "image": "https://images.unsplash.com/photo-1558030006-450675393462?w=600&q=80" },
-      { "id": 3, "category": "sausages", "name": "Lamb Sausage", "weight": "400g", "calories": "215 kcal/100g", "shelf": "10 days", "ingredients": "100% lamb, onion, spices", "desc": "Traditional Uzbek flavor, juicy and aromatic.", "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80" },
-      { "id": 4, "category": "grill", "name": "Beef Steak", "weight": "600g", "calories": "187 kcal/100g", "shelf": "7 days", "ingredients": "Premium beef, salt, spices", "desc": "Grill-ready premium quality cut.", "image": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=600&q=80" },
-      { "id": 5, "category": "smoked", "name": "Home Sausage", "weight": "700g", "calories": "298 kcal/100g", "shelf": "12 days", "ingredients": "Mixed meat, garlic, natural casing", "desc": "Made with a home-style recipe, traditional taste.", "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" },
-      { "id": 6, "category": "sausages", "name": "Frankfurt Sausage", "weight": "250g", "calories": "265 kcal/100g", "shelf": "14 days", "ingredients": "Beef and lamb, smoked, natural", "desc": "Loved by kids and adults alike — classic taste.", "image": "https://images.unsplash.com/photo-1432139509613-5c4255815697?w=600&q=80" }
-    ]
+      {
+        "id": 1,
+        "category": "boiled",
+        "name": "Doctor Sausage",
+        "weight": "500g",
+        "calories": "257 kcal/100g",
+        "shelf": "15 days",
+        "ingredients": "Beef, spices, natural casing",
+        "desc": "Classic and delicious, the centerpiece of any table.",
+        "image": "/doctor_sausage.png"
+      },
+      {
+        "id": 2,
+        "category": "smoked",
+        "name": "Premium Cervelat",
+        "weight": "300g",
+        "calories": "320 kcal/100g",
+        "shelf": "20 days",
+        "ingredients": "Lamb, spices, natural casing",
+        "desc": "Italian-style premium dry sausage.",
+        "image": "/premium_servelat.png"
+      },
+      {
+        "id": 3,
+        "category": "sausages",
+        "name": "Lamb Sausage",
+        "weight": "400g",
+        "calories": "215 kcal/100g",
+        "shelf": "10 days",
+        "ingredients": "100% lamb, onion, spices",
+        "desc": "Traditional Uzbek flavor, juicy and aromatic.",
+        "image": "/lamb_sausage.png"
+      },
+      {
+        "id": 4,
+        "category": "grill",
+        "name": "Beef Steak",
+        "weight": "600g",
+        "calories": "187 kcal/100g",
+        "shelf": "7 days",
+        "ingredients": "Premium beef, salt, spices",
+        "desc": "Grill-ready premium quality cut.",
+        "image": "/beef_steak.png"
+      },
+      {
+        "id": 5,
+        "category": "smoked",
+        "name": "Home Sausage",
+        "weight": "700g",
+        "calories": "298 kcal/100g",
+        "shelf": "12 days",
+        "ingredients": "Mixed meat, garlic, natural casing",
+        "desc": "Made with a home-style recipe, traditional taste.",
+        "image": "/home_sausage.png"
+      },
+      {
+        "id": 6,
+        "category": "sausages",
+        "name": "Frankfurt Sausage",
+        "weight": "250g",
+        "calories": "265 kcal/100g",
+        "shelf": "14 days",
+        "ingredients": "Beef and lamb, smoked, natural",
+        "desc": "Loved by kids and adults alike — classic taste.",
+        "image": "/frankfurt_sausage.png"
+      },
+      {
+        "id": 7,
+        "category": "smoked",
+        "name": "Salami Sausage",
+        "weight": "350g",
+        "calories": "380 kcal/100g",
+        "shelf": "25 days",
+        "ingredients": "Beef, garlic, aromatic peppers",
+        "desc": "Premium smoked salami sausage with rich smoky aroma.",
+        "image": "/salami_sausage.png"
+      },
+      {
+        "id": 8,
+        "category": "boiled",
+        "name": "Moskovskaya Sausage",
+        "weight": "400g",
+        "calories": "290 kcal/100g",
+        "shelf": "15 days",
+        "ingredients": "Selected beef, milk, special spices",
+        "desc": "Traditional recipe boiled beef sausage.",
+        "image": "/moscow_sausage.png"
+      },
+      {
+        "id": 9,
+        "category": "sausages",
+        "name": "Kids Sausages",
+        "weight": "300g",
+        "calories": "195 kcal/100g",
+        "shelf": "10 days",
+        "ingredients": "Beef, natural milk, mild spices",
+        "desc": "Light and delicious, kid-friendly favorite flavor.",
+        "image": "/kid_sausage.png"
+      },
+      {
+        "id": 10,
+        "category": "grill",
+        "name": "Grill Sausages",
+        "weight": "450g",
+        "calories": "285 kcal/100g",
+        "shelf": "12 days",
+        "ingredients": "Beef, sweet pepper, cheese",
+        "desc": "Perfect sausages for grilling or outdoor picnics.",
+        "image": "/grill_sausage.png"
+      },
+      {
+        "id": 11,
+        "category": "smoked",
+        "name": "Smoked Beef Tongue",
+        "weight": "300g",
+        "calories": "220 kcal/100g",
+        "shelf": "18 days",
+        "ingredients": "Beef tongue, salt, spices, natural wood smoke",
+        "desc": "Genuine meat delicacy, tender and exquisite.",
+        "image": "/smoked_tongue.png"
+      },
+      {
+        "id": 12,
+        "category": "boiled",
+        "name": "Turkey Breast Roll",
+        "weight": "500g",
+        "calories": "160 kcal/100g",
+        "shelf": "14 days",
+        "ingredients": "Turkey breast, fresh greens, garlic, salt",
+        "desc": "Healthy, diet-friendly premium turkey roll.",
+        "image": "/turkey_roll.png"
+      }
+    ],
+    "single": {
+      "backBtn": "Go Back",
+      "storage": "Storage Conditions",
+      "storageValue": "Store at temperatures from 0°C to +6°C",
+      "certifications": "Certifications",
+      "certificationsValue": "ISO 9001, ISO 22000, 100% Halal",
+      "delivery": "Delivery",
+      "deliveryValue": "Fast delivery across Tashkent within 24 hours",
+      "ingredientsLabel": "Product Ingredients",
+      "shelfLabel": "Shelf Life",
+      "caloriesLabel": "Energy Value",
+      "weightLabel": "Net Weight",
+      "orderCta": "Order Now (Contact)"
+    }
   },
   "advantages": {
     "tag": "Why Choose Us?",
@@ -65,12 +205,30 @@
     "titleAccent": "Advantages",
     "subtitle": "Quality and trust — our proven commitment.",
     "items": [
-      { "title": "100% Halal", "desc": "All products are prepared according to Islamic standards under strict supervision." },
-      { "title": "Natural Ingredients", "desc": "No artificial colors or preservatives — only natural raw materials and spices." },
-      { "title": "Cold Chain", "desc": "Unbroken cold chain from factory to your table ensures quality preservation." },
-      { "title": "ISO Certified", "desc": "Modern production facility meeting international ISO quality standards." },
-      { "title": "Fast Delivery", "desc": "Delivery across Tashkent within 24 hours, straight to your door." },
-      { "title": "25+ Years of Experience", "desc": "Over a quarter century as Uzbekistan's trusted meat factory." }
+      {
+        "title": "100% Halal",
+        "desc": "All products are prepared according to Islamic standards under strict supervision."
+      },
+      {
+        "title": "Natural Ingredients",
+        "desc": "No artificial colors or preservatives — only natural raw materials and spices."
+      },
+      {
+        "title": "Cold Chain",
+        "desc": "Unbroken cold chain from factory to your table ensures quality preservation."
+      },
+      {
+        "title": "ISO Certified",
+        "desc": "Modern production facility meeting international ISO quality standards."
+      },
+      {
+        "title": "Fast Delivery",
+        "desc": "Delivery across Tashkent within 24 hours, straight to your door."
+      },
+      {
+        "title": "25+ Years of Experience",
+        "desc": "Over a quarter century as Uzbekistan's trusted meat factory."
+      }
     ]
   },
   "contact": {
@@ -82,9 +240,9 @@
     "phonePlaceholder": "+998 __ ___ __ __",
     "messagePlaceholder": "Your message or order...",
     "sendBtn": "Send Message",
-    "address": "Tashkent, Yunusabad district, 14th quarter, 23",
+    "address": "Tashkent, Chilanzar district, 14th quarter, 23",
     "mapLabel": "View on map",
-    "phone": "+998 71 123 45 67",
+    "phone": "+998 33 914 22 22",
     "email": "info@atabekov.uz",
     "workHours": "Mon–Sat: 08:00–18:00"
   },

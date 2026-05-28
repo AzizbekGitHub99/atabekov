@@ -112,7 +112,7 @@ export default function About() {
               {/* Main image card */}
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-border-light dark:border-border-dark aspect-[4/3]">
                 <Image
-                  src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80"
+                  src="https://images.unsplash.com/photo-1588168333986-5078d3ae3976?w=800&q=80"
                   alt="Atabekov zavod"
                   fill
                   className="object-cover"

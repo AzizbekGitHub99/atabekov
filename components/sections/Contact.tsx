@@ -84,17 +84,14 @@ export default function Contact() {
           <div ref={infoRef} className="section-hidden-left lg:col-span-2 space-y-5">
             {/* Main info card */}
             <div className="rounded-3xl border border-border-light dark:border-border-dark bg-bg-card dark:bg-bg-card-dark p-7 shadow-sm">
-              <div className="w-12 h-12 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center mb-6">
-                <MapPin size={22} className="text-primary" />
-              </div>
               <h3 className="font-serif font-bold text-xl text-text-main dark:text-text-dark mb-5">
                 Atabekov Kolbasa Zavodi
               </h3>
 
               <div className="space-y-4">
                 {contactInfo.map(({ icon: Icon, value }, i) => (
-                  <div key={i} className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-xl bg-accent/10 border border-accent/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div key={i} className="flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-xl bg-accent/10 border border-accent/20 flex items-center justify-center flex-shrink-0">
                       <Icon size={14} className="text-accent" />
                     </div>
                     <span className="text-sm text-text-muted dark:text-text-dark-muted leading-relaxed">
@@ -102,18 +99,6 @@ export default function Contact() {
                     </span>
                   </div>
                 ))}
-              </div>
-
-              <div className="mt-6 overflow-hidden rounded-2xl border border-accent/20 bg-bg-main dark:bg-bg-dark shadow-sm">
-                <iframe
-                  id="contact-map"
-                  title={t.contact.mapLabel}
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d282.1947140032281!2d69.19856475885645!3d41.29217793913074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b004f09bf7f%3A0xeebde5f544bb8cce!2sSosisochnaya%20Kak%20V%20Sssr!5e1!3m2!1sen!2s!4v1779970641553!5m2!1sen!2s"
-                  className="h-64 w-full sm:h-72"
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
               </div>
             </div>
 
@@ -256,6 +241,19 @@ export default function Contact() {
               )}
             </div>
           </div>
+        </div>
+
+        {/* Large Standalone Map Block */}
+        <div className="mt-12 overflow-hidden rounded-3xl border border-border-light dark:border-border-dark bg-bg-card dark:bg-bg-card-dark shadow-md hover:border-accent/40 transition-all duration-300 relative z-10">
+          <iframe
+            id="contact-map"
+            title={t.contact.mapLabel}
+            src="https://maps.google.com/maps?q=41.373637,69.303102&t=&z=16&ie=UTF8&iwloc=&output=embed"
+            className="h-[450px] w-full"
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
         </div>
       </div>
     </section>

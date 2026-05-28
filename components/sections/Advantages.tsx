@@ -101,37 +101,7 @@ export default function Advantages() {
           })}
         </div>
 
-        {/* Bottom CTA banner */}
-        <div ref={useScrollReveal()} className="mt-16 section-hidden">
-          <div
-            className="relative rounded-3xl overflow-hidden p-8 sm:p-12 text-center"
-            style={{ background: 'linear-gradient(135deg, #7A0016 0%, #5C0010 50%, #3D000A 100%)' }}
-          >
-            {/* Pattern overlay */}
-            <div className="absolute inset-0 bg-pattern opacity-10" />
-            {/* Gold blur */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-32 blur-3xl opacity-20"
-              style={{ background: 'radial-gradient(ellipse, #C5A059, transparent)' }}
-            />
 
-            <div className="relative">
-              <div className="font-serif font-black text-3xl sm:text-4xl text-white mb-3">
-                Premium. <span className="gradient-text">Halol.</span> An&apos;anaviy.
-              </div>
-              <p className="text-white/70 mb-8 max-w-lg mx-auto text-sm sm:text-base">
-                Buyurtma berish yoki konsultatsiya uchun biz bilan bog&apos;laning
-              </p>
-              <button
-                id="advantages-cta-btn"
-                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-semibold text-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-gold"
-                style={{ background: 'linear-gradient(135deg, #C5A059, #D4B570)', color: '#1a0005' }}
-              >
-                Bog&apos;lanish
-              </button>
-            </div>
-          </div>
-        </div>
       </div>
 
       {/* Bottom wave */}
