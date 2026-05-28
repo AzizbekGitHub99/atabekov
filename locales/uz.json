@@ -1,0 +1,140 @@
+{
+  "nav": {
+    "about": "Zavod haqida",
+    "products": "Mahsulotlar",
+    "advantages": "Afzalliklar",
+    "contact": "Aloqa"
+  },
+  "hero": {
+    "badge": "O'zbekistonning №1 Go'sht Zavodi",
+    "titleLine1": "Premium",
+    "titleLine2": "Halol",
+    "titleLine3": "Go'sht",
+    "titleEnd": "Mahsulotlari",
+    "subtitle": "25 yildan ortiq an'ana va tajriba bilan tayyorlangan, 100% tabiiy go'shtdan yaratilgan premium kolbasa va go'sht mahsulotlari.",
+    "cta": "Mahsulotlarni ko'rish",
+    "ctaSecondary": "Biz haqimizda"
+  },
+  "about": {
+    "tag": "Bizning tarix",
+    "title": "An'ana va",
+    "titleAccent": "Sifat",
+    "subtitle": "Har bir mahsulotimiz — yillar davomida sinovdan o'tgan texnologiya va 100% tabiiy xom ashyo birikmasidir.",
+    "story": "Biz 2000-yildan beri O'zbekistonning eng yaxshi go'sht mahsulotlarini ishlab chiqarib kelmoqdamiz. Har bir mahsulotimiz qat'iy sifat nazoratidan o'tadi va faqat tanlangan tabiiy xom ashyodan tayyorlanadi. Bizning jamoamiz — tajribali ustalar va zamonaviy texnologiya mutaxassislaridan iborat.",
+    "stat1": "25+",
+    "stat1Label": "Yillik tajriba",
+    "stat2": "100%",
+    "stat2Label": "Tabiiy go'sht",
+    "stat3": "50+",
+    "stat3Label": "Mahsulot turi",
+    "stat4": "1M+",
+    "stat4Label": "Mamnun mijozlar"
+  },
+  "products": {
+    "tag": "Kollektion",
+    "title": "Premium",
+    "titleAccent": "Mahsulotlar",
+    "subtitle": "Har bir mahsulot — san'at asari. Tabiiy xom ashyo va qadimiy retseptlar asosida.",
+    "halal": "100% Halol",
+    "weight": "Og'irligi",
+    "calories": "Kaloriya",
+    "shelf": "Saqlash muddati",
+    "ingredients": "Tarkibi",
+    "orderBtn": "Buyurtma berish",
+    "items": [
+      {
+        "id": 1,
+        "name": "Doktor Kolbasa",
+        "weight": "500g",
+        "calories": "257 kcal/100g",
+        "shelf": "15 kun",
+        "ingredients": "Mol go'shti, ziravorlar, tabiiy qobiq",
+        "desc": "Klassik va mazali, har bir dasturxonning ko'rki.",
+        "image": "https://images.unsplash.com/photo-1541518763669-27fef04b14ea?w=600&q=80"
+      },
+      {
+        "id": 2,
+        "name": "Premium Servelat",
+        "weight": "300g",
+        "calories": "320 kcal/100g",
+        "shelf": "20 kun",
+        "ingredients": "Qo'y go'shti, ziravorlar, natural qobiq",
+        "desc": "Italyan uslubidagi premium quruq kolbasa.",
+        "image": "https://images.unsplash.com/photo-1558030006-450675393462?w=600&q=80"
+      },
+      {
+        "id": 3,
+        "name": "Qo'y Sosiskasi",
+        "weight": "400g",
+        "calories": "215 kcal/100g",
+        "shelf": "10 kun",
+        "ingredients": "100% qo'y go'shti, piyoz, ziravorlar",
+        "desc": "An'anaviy o'zbek ta'mida, sharbatli va mazali.",
+        "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80"
+      },
+      {
+        "id": 4,
+        "name": "Mol Bifshteks",
+        "weight": "600g",
+        "calories": "187 kcal/100g",
+        "shelf": "7 kun",
+        "ingredients": "Premium mol go'shti, tuz, ziravorlar",
+        "desc": "To'g'ridan-to'g'ri grill uchun tayyor, premium sifat.",
+        "image": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=600&q=80"
+      },
+      {
+        "id": 5,
+        "name": "Uy Kolbasasi",
+        "weight": "700g",
+        "calories": "298 kcal/100g",
+        "shelf": "12 kun",
+        "ingredients": "Aralash go'sht, sarimsoq, tabiiy qobiq",
+        "desc": "Uy lazzatida tayyorlangan, an'anaviy retsept.",
+        "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80"
+      },
+      {
+        "id": 6,
+        "name": "Franfurt Sosiska",
+        "weight": "250g",
+        "calories": "265 kcal/100g",
+        "shelf": "14 kun",
+        "ingredients": "Mol va qo'y go'shti, dudlangan, natural",
+        "desc": "Bolalar va kattalarga maqbul, klassik ta'm.",
+        "image": "https://images.unsplash.com/photo-1432139509613-5c4255815697?w=600&q=80"
+      }
+    ]
+  },
+  "advantages": {
+    "tag": "Nima uchun biz?",
+    "title": "Bizning",
+    "titleAccent": "Afzalliklarimiz",
+    "subtitle": "Sifat va ishonch — bizning tasdiqlangan va'damiz.",
+    "items": [
+      { "title": "100% Halol", "desc": "Barcha mahsulotlar islomiy standartlarga muvofiq, maxsus nazorat ostida tayyorlanadi." },
+      { "title": "Tabiiy Tarkib", "desc": "Sun'iy bo'yoq va konservantlarsiz, faqat tabiiy xom ashyo va ziravorlar ishlatiladi." },
+      { "title": "Sovuq Zanjir", "desc": "Zavoddan dasturxoningizgacha uzluksiz sovuq zanjir saqlanib, sifat ta'minlanadi." },
+      { "title": "ISO Sertifikat", "desc": "Xalqaro ISO sifat standartlariga javob beradigan zamonaviy ishlab chiqarish texnologiyasi." },
+      { "title": "Tez Yetkazish", "desc": "Toshkent bo'ylab 24 soat ichida eshigingizgacha yetkazib berish xizmati mavjud." },
+      { "title": "25+ Yil Tajriba", "desc": "Chorak asrdan ko'proq vaqt davomida O'zbekistonning ishonchli go'sht zavodi." }
+    ]
+  },
+  "contact": {
+    "tag": "Aloqa",
+    "title": "Biz bilan",
+    "titleAccent": "Bog'laning",
+    "subtitle": "Savol yoki buyurtma uchun quyidagi forma orqali yozing yoki to'g'ridan-to'g'ri aloqaga chiqing.",
+    "namePlaceholder": "Ismingiz",
+    "phonePlaceholder": "+998 __ ___ __ __",
+    "messagePlaceholder": "Xabaringiz yoki buyurtmangiz...",
+    "sendBtn": "Yuborish",
+    "address": "Toshkent sh., Yunusobod tumani, 14-mavze, 23-uy",
+    "phone": "+998 71 123 45 67",
+    "email": "info@atabekov.uz",
+    "workHours": "Dush–Shan: 08:00–18:00"
+  },
+  "footer": {
+    "copy": "© 2024 Atabekov Kolbasa Zavodi. Barcha huquqlar himoyalangan.",
+    "tagline": "Premium. Halol. An'anaviy.",
+    "social": "Ijtimoiy tarmoqlar"
+  }
+}

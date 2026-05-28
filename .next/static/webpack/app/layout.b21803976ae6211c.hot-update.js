@@ -1,0 +1,32 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("app/layout",{
+
+/***/ "(app-pages-browser)/./app/globals.css":
+/*!*************************!*\
+  !*** ./app/globals.css ***!
+  \*************************/
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+eval(__webpack_require__.ts("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"870872c8bbde\");\nif (true) { module.hot.accept() }\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwcC1wYWdlcy1icm93c2VyKS8uL2FwcC9nbG9iYWxzLmNzcyIsIm1hcHBpbmdzIjoiO0FBQUEsK0RBQWUsY0FBYztBQUM3QixJQUFJLElBQVUsSUFBSSxpQkFBaUIiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9fTl9FLy4vYXBwL2dsb2JhbHMuY3NzPzA1YjEiXSwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQgXCI4NzA4NzJjOGJiZGVcIlxuaWYgKG1vZHVsZS5ob3QpIHsgbW9kdWxlLmhvdC5hY2NlcHQoKSB9XG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(app-pages-browser)/./app/globals.css\n"));
+
+/***/ }),
+
+/***/ "(app-pages-browser)/./locales/ru.json":
+/*!*************************!*\
+  !*** ./locales/ru.json ***!
+  \*************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+module.exports = /*#__PURE__*/JSON.parse('{"nav":{"about":"� ������","products":"���������","advantages":"������������","contact":"��������"},"hero":{"badge":"������ ����� �1 � �����������","titleLine1":"�������","titleLine2":"������","titleLine3":"������","titleEnd":"���������","subtitle":"����� 25 ��� �������� � ����� � ������� ��������� ������� �� 100% ������������ ����.","cta":"�������� ���������","ctaSecondary":"� ���"},"about":{"tag":"���� �������","title":"�������� �","titleAccent":"��������","subtitle":"������ ��� ������� � ��� ��������� ����������� ���������� � 100% ������������ �����.","story":"� 2000 ���� �� ���������� ������ ������ �������� � �����������. ������ ������� �������� ������� �������� �������� � ��������������� ������ �� ��������� ������������ �����. ���� ������� ������� �� ������� �������� � ������������ ����������� ����������.","stat1":"25+","stat1Label":"��� �����","stat2":"100%","stat2Label":"����������� ����","stat3":"50+","stat3Label":"����� ���������","stat4":"1�+","stat4Label":"��������� ��������"},"products":{"tag":"���������","title":"�������","titleAccent":"���������","subtitle":"������ ������� � ������������ ���������. �� ������ ������������ ����� � ��������� ��������.","halal":"100% ������","weight":"���","calories":"�������","shelf":"���� ��������","ingredients":"������","orderBtn":"��������","items":[{"id":1,"name":"���������� �������","weight":"500�","calories":"257 ����/100�","shelf":"15 ����","ingredients":"��������, ������, ����������� ��������","desc":"������������ � �������, ��������� ������ �����.","image":"https://images.unsplash.com/photo-1541518763669-27fef04b14ea?w=600&q=80"},{"id":2,"name":"������� ��������","weight":"300�","calories":"320 ����/100�","shelf":"20 ����","ingredients":"��������, ������, ����������� ��������","desc":"������� ����� ������� � ����������� �����.","image":"https://images.unsplash.com/photo-1558030006-450675393462?w=600&q=80"},{"id":3,"name":"������� �� ��������","weight":"400�","calories":"215 ����/100�","shelf":"10 ����","ingredients":"100% ��������, ���, ������","desc":"������������ ��������� ����, ������ � ���������.","image":"https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80"},{"id":4,"name":"������� ��������","weight":"600�","calories":"187 ����/100�","shelf":"7 ����","ingredients":"������� ��������, ����, ������","desc":"����� ��� �����, ������� ��������.","image":"https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=600&q=80"},{"id":5,"name":"�������� �������","weight":"700�","calories":"298 ����/100�","shelf":"12 ����","ingredients":"��������� ����, ������, ����������� ��������","desc":"������������ �� ��������� �������, ������������ ����.","image":"https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80"},{"id":6,"name":"������������� �������","weight":"250�","calories":"265 ����/100�","shelf":"14 ����","ingredients":"�������� � ��������, ��������, �����������","desc":"������� ������ � ���������, ������������ ����.","image":"https://images.unsplash.com/photo-1432139509613-5c4255815697?w=600&q=80"}]},"advantages":{"tag":"������ ��?","title":"����","titleAccent":"������������","subtitle":"�������� � ������� � ���� ������������� ��������.","items":[{"title":"100% ������","desc":"��� ��������� ������������ � ������������ � ���������� ����������� ��� ����������� ���������."},{"title":"����������� ������","desc":"��� ������������� ���������� � ������������ � ������ ����������� ����� � ������."},{"title":"�������� ����","desc":"�� ������ �� ������ ����� � ����������� ��������� ������� ��� ���������� ��������."},{"title":"ISO ����������","desc":"����������� ������������, ��������������� ������������� ���������� �������� ISO."},{"title":"������� ��������","desc":"�������� �� ����� �������� � ������� 24 ����� ����� � ����� �����."},{"title":"25+ ��� �����","desc":"����� �������� ���� � ������� ������ ����� �����������."}]},"contact":{"tag":"��������","title":"���������","titleAccent":"� ����","subtitle":"�� �������� ��� ������� ��������� ����� ���� ��� ��������� � ���� ��������.","namePlaceholder":"���� ���","phonePlaceholder":"+998 __ ___ __ __","messagePlaceholder":"���� ��������� ��� �����...","sendBtn":"���������","address":"�. �������, ������������ �����, 14-�������, �. 23","phone":"+998 71 123 45 67","email":"info@atabekov.uz","workHours":"����: 08:00�18:00"},"footer":{"copy":"� 2024 Atabekov ������ �����. ��� ����� ��������.","tagline":"�������. ������. ������������.","social":"���������� ����"}}');
+
+/***/ })
+
+});

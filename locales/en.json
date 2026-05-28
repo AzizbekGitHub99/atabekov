@@ -1,0 +1,86 @@
+{
+  "nav": {
+    "about": "About Us",
+    "products": "Products",
+    "advantages": "Advantages",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Uzbekistan's #1 Meat Factory",
+    "titleLine1": "Premium",
+    "titleLine2": "Halal",
+    "titleLine3": "Meat",
+    "titleEnd": "Products",
+    "subtitle": "Over 25 years of tradition and excellence — premium sausage and meat products crafted from 100% natural ingredients.",
+    "cta": "View Products",
+    "ctaSecondary": "About Us"
+  },
+  "about": {
+    "tag": "Our Story",
+    "title": "Tradition &",
+    "titleAccent": "Quality",
+    "subtitle": "Every product is a combination of time-tested technology and 100% natural raw materials.",
+    "story": "Since 2000, we have been producing the finest meat products in Uzbekistan. Every product passes strict quality control and is made only from carefully selected natural ingredients. Our team consists of experienced craftsmen and modern technology specialists.",
+    "stat1": "25+",
+    "stat1Label": "Years of Experience",
+    "stat2": "100%",
+    "stat2Label": "Natural Meat",
+    "stat3": "50+",
+    "stat3Label": "Product Varieties",
+    "stat4": "1M+",
+    "stat4Label": "Happy Customers"
+  },
+  "products": {
+    "tag": "Collection",
+    "title": "Premium",
+    "titleAccent": "Products",
+    "subtitle": "Each product is a work of art. Crafted from natural ingredients and ancient recipes.",
+    "halal": "100% Halal",
+    "weight": "Weight",
+    "calories": "Calories",
+    "shelf": "Shelf Life",
+    "ingredients": "Ingredients",
+    "orderBtn": "Order Now",
+    "items": [
+      { "id": 1, "name": "Doctor Sausage", "weight": "500g", "calories": "257 kcal/100g", "shelf": "15 days", "ingredients": "Beef, spices, natural casing", "desc": "Classic and delicious, the centerpiece of any table.", "image": "https://images.unsplash.com/photo-1541518763669-27fef04b14ea?w=600&q=80" },
+      { "id": 2, "name": "Premium Cervelat", "weight": "300g", "calories": "320 kcal/100g", "shelf": "20 days", "ingredients": "Lamb, spices, natural casing", "desc": "Italian-style premium dry sausage.", "image": "https://images.unsplash.com/photo-1558030006-450675393462?w=600&q=80" },
+      { "id": 3, "name": "Lamb Sausage", "weight": "400g", "calories": "215 kcal/100g", "shelf": "10 days", "ingredients": "100% lamb, onion, spices", "desc": "Traditional Uzbek flavor, juicy and aromatic.", "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80" },
+      { "id": 4, "name": "Beef Steak", "weight": "600g", "calories": "187 kcal/100g", "shelf": "7 days", "ingredients": "Premium beef, salt, spices", "desc": "Grill-ready premium quality cut.", "image": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=600&q=80" },
+      { "id": 5, "name": "Home Sausage", "weight": "700g", "calories": "298 kcal/100g", "shelf": "12 days", "ingredients": "Mixed meat, garlic, natural casing", "desc": "Made with a home-style recipe, traditional taste.", "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" },
+      { "id": 6, "name": "Frankfurt Sausage", "weight": "250g", "calories": "265 kcal/100g", "shelf": "14 days", "ingredients": "Beef and lamb, smoked, natural", "desc": "Loved by kids and adults alike — classic taste.", "image": "https://images.unsplash.com/photo-1432139509613-5c4255815697?w=600&q=80" }
+    ]
+  },
+  "advantages": {
+    "tag": "Why Choose Us?",
+    "title": "Our",
+    "titleAccent": "Advantages",
+    "subtitle": "Quality and trust — our proven commitment.",
+    "items": [
+      { "title": "100% Halal", "desc": "All products are prepared according to Islamic standards under strict supervision." },
+      { "title": "Natural Ingredients", "desc": "No artificial colors or preservatives — only natural raw materials and spices." },
+      { "title": "Cold Chain", "desc": "Unbroken cold chain from factory to your table ensures quality preservation." },
+      { "title": "ISO Certified", "desc": "Modern production facility meeting international ISO quality standards." },
+      { "title": "Fast Delivery", "desc": "Delivery across Tashkent within 24 hours, straight to your door." },
+      { "title": "25+ Years of Experience", "desc": "Over a quarter century as Uzbekistan's trusted meat factory." }
+    ]
+  },
+  "contact": {
+    "tag": "Contact",
+    "title": "Get in",
+    "titleAccent": "Touch",
+    "subtitle": "For inquiries or orders, fill out the form below or contact us directly.",
+    "namePlaceholder": "Your Name",
+    "phonePlaceholder": "+998 __ ___ __ __",
+    "messagePlaceholder": "Your message or order...",
+    "sendBtn": "Send Message",
+    "address": "Tashkent, Yunusabad district, 14th quarter, 23",
+    "phone": "+998 71 123 45 67",
+    "email": "info@atabekov.uz",
+    "workHours": "Mon–Sat: 08:00–18:00"
+  },
+  "footer": {
+    "copy": "© 2024 Atabekov Meat Factory. All rights reserved.",
+    "tagline": "Premium. Halal. Traditional.",
+    "social": "Social Media"
+  }
+}
