@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import { ArrowRight, Scale, Flame, Clock3, ListChecks, ShoppingBag } from 'lucide-react'
-import { useLang } from '@/context/LangContext'
+import { useLang, type Translations } from '@/context/LangContext'
 
 function useScrollReveal() {
   const ref = useRef<HTMLDivElement>(null)
@@ -31,7 +31,7 @@ interface ProductItem {
   image: string
 }
 
-function ProductCard({ item, index, t }: { item: ProductItem; index: number; t: any }) {
+function ProductCard({ item, index, t }: { item: ProductItem; index: number; t: Translations }) {
   const [hovered, setHovered] = useState(false)
 
   return (

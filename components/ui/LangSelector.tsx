@@ -5,9 +5,9 @@ import { ChevronDown } from 'lucide-react'
 import { useState, useRef, useEffect } from 'react'
 
 const LANGS: { code: Locale; label: string; flag: string }[] = [
-  { code: 'uz', label: "O'zbek", flag: '????' },
-  { code: 'ru', label: '�������', flag: '????' },
-  { code: 'en', label: 'English', flag: '????' },
+  { code: 'uz', label: "O'zbek", flag: 'UZ' },
+  { code: 'ru', label: 'Русский', flag: 'RU' },
+  { code: 'en', label: 'English', flag: 'EN' },
 ]
 
 export default function LangSelector() {

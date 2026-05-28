@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
+import Image from 'next/image'
 import { useLang } from '@/context/LangContext'
 import { Award, Leaf, Clock, Users } from 'lucide-react'
 
@@ -110,16 +111,18 @@ export default function About() {
 
               {/* Main image card */}
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-border-light dark:border-border-dark aspect-[4/3]">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80"
                   alt="Atabekov zavod"
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 90vw, 40vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                 <div className="absolute bottom-5 left-5 right-5">
                   <div className="glass rounded-2xl px-4 py-3 border border-white/10">
                     <div className="text-white font-semibold text-sm">Atabekov Kolbasa Zavodi</div>
-                    <div className="text-white/70 text-xs mt-0.5">Toshkent, O'zbekiston · 2000-yildan</div>
+                    <div className="text-white/70 text-xs mt-0.5">Toshkent, O&apos;zbekiston - 2000-yildan</div>
                   </div>
                 </div>
               </div>
