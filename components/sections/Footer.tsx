@@ -3,19 +3,34 @@
 import Image from 'next/image'
 import { useLang } from '@/context/LangContext'
 import { ArrowUp, MapPin, Phone, Mail, Instagram, Facebook } from 'lucide-react'
+import { usePathname, useRouter } from 'next/navigation'
 
 export default function Footer() {
   const { t } = useLang()
+  const pathname = usePathname()
+  const router = useRouter()
 
-  const scrollToSection = (id: string) => {
-    const el = document.getElementById(id)
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  const handleNavClick = (key: 'about' | 'products' | 'advantages' | 'contact') => {
+    if (key === 'products') {
+      router.push('/products')
+    } else {
+      if (pathname === '/') {
+        const el = document.getElementById(key)
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }
+      } else {
+        router.push(`/#${key}`)
+      }
     }
   }
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+  const handleLogoClick = () => {
+    if (pathname === '/') {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    } else {
+      router.push('/')
+    }
   }
 
   return (
@@ -36,7 +51,7 @@ export default function Footer() {
           {/* Brand Col - 5 cols */}
           <div className="md:col-span-5 space-y-6">
             <button
-              onClick={scrollToTop}
+              onClick={handleLogoClick}
               className="flex items-center gap-3 group text-left"
               aria-label="Atabekov — bosh sahifa"
             >
@@ -113,7 +128,7 @@ export default function Footer() {
               {(['about', 'products', 'advantages', 'contact'] as const).map((key) => (
                 <li key={key}>
                   <button
-                    onClick={() => scrollToSection(key)}
+                    onClick={() => handleNavClick(key)}
                     className="text-sm text-text-muted dark:text-text-dark-muted hover:text-accent transition-colors duration-300 font-medium"
                   >
                     {t.nav[key]}
@@ -153,7 +168,7 @@ export default function Footer() {
           </p>
           
           <button
-            onClick={scrollToTop}
+            onClick={handleLogoClick}
             className="w-10 h-10 rounded-full border border-border-light dark:border-border-dark hover:border-accent text-text-muted hover:text-accent flex items-center justify-center transition-all duration-300 hover:bg-accent/5 group"
             aria-label="Scroll to top"
           >

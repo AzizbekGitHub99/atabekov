@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { useLang } from '@/context/LangContext'
-import { MapPin, Phone, Mail, Clock, Send, CheckCircle2, Instagram, Facebook, ExternalLink } from 'lucide-react'
+import { MapPin, Phone, Mail, Clock, Send, CheckCircle2, Instagram, Facebook } from 'lucide-react'
 
 function useScrollReveal() {
   const ref = useRef<HTMLDivElement>(null)
@@ -28,7 +28,6 @@ export default function Contact() {
   const [form, setForm] = useState({ name: '', phone: '', message: '' })
   const [sent, setSent] = useState(false)
   const [loading, setLoading] = useState(false)
-  const mapUrl = 'https://maps.app.goo.gl/ApmyBHUtSWpKQmVo9'
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -105,18 +104,17 @@ export default function Contact() {
                 ))}
               </div>
 
-              <a
-                href={mapUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                id="contact-map-link"
-                className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-5 py-3 text-sm font-semibold text-accent transition-all duration-300 hover:-translate-y-0.5 hover:border-accent hover:bg-accent/15 hover:shadow-gold"
-                aria-label={t.contact.mapLabel}
-              >
-                <MapPin size={16} />
-                {t.contact.mapLabel}
-                <ExternalLink size={14} />
-              </a>
+              <div className="mt-6 overflow-hidden rounded-2xl border border-accent/20 bg-bg-main dark:bg-bg-dark shadow-sm">
+                <iframe
+                  id="contact-map"
+                  title={t.contact.mapLabel}
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d282.1947140032281!2d69.19856475885645!3d41.29217793913074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b004f09bf7f%3A0xeebde5f544bb8cce!2sSosisochnaya%20Kak%20V%20Sssr!5e1!3m2!1sen!2s!4v1779970641553!5m2!1sen!2s"
+                  className="h-64 w-full sm:h-72"
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
             </div>
 
             {/* Social / extra */}

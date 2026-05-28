@@ -4,9 +4,11 @@ import { useEffect, useRef } from 'react'
 import Image from 'next/image'
 import { ArrowRight, ChevronDown, Star } from 'lucide-react'
 import { useLang } from '@/context/LangContext'
+import { useRouter } from 'next/navigation'
 
 export default function Hero() {
   const { t } = useLang()
+  const router = useRouter()
   const leftRef = useRef<HTMLDivElement>(null)
   const rightRef = useRef<HTMLDivElement>(null)
 
@@ -18,8 +20,8 @@ export default function Hero() {
     return () => clearTimeout(timer)
   }, [])
 
-  const scrollToProducts = () => {
-    document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })
+  const goToProducts = () => {
+    router.push('/products')
   }
   const scrollToAbout = () => {
     document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })
@@ -91,7 +93,7 @@ export default function Hero() {
             <div className="flex flex-wrap gap-4 mb-12">
               <button
                 id="hero-cta-products"
-                onClick={scrollToProducts}
+                onClick={goToProducts}
                 className="btn-primary text-sm"
               >
                 {t.hero.cta}

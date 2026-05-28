@@ -6,11 +6,14 @@ import { Menu, X } from 'lucide-react'
 import { useLang } from '@/context/LangContext'
 import ThemeToggle from '@/components/ui/ThemeToggle'
 import LangSelector from '@/components/ui/LangSelector'
+import { usePathname, useRouter } from 'next/navigation'
 
 const NAV_SECTIONS = ['about', 'products', 'advantages', 'contact'] as const
 
 export default function Header() {
   const { t } = useLang()
+  const pathname = usePathname()
+  const router = useRouter()
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
 
@@ -20,15 +23,22 @@ export default function Header() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  const scrollTo = (id: string) => {
-    const el = document.getElementById(id)
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' })
-      // animate underline via class
-      el.classList.add('section-highlight')
-      setTimeout(() => el.classList.remove('section-highlight'), 1200)
-    }
+  const handleNavClick = (key: typeof NAV_SECTIONS[number]) => {
     setMobileOpen(false)
+    if (key === 'products') {
+      router.push('/products')
+    } else {
+      if (pathname === '/') {
+        const el = document.getElementById(key)
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+          el.classList.add('section-highlight')
+          setTimeout(() => el.classList.remove('section-highlight'), 1200)
+        }
+      } else {
+        router.push(`/#${key}`)
+      }
+    }
   }
 
   return (
@@ -46,7 +56,13 @@ export default function Header() {
             {/* Logo */}
             <button
               id="logo-btn"
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              onClick={() => {
+                if (pathname === '/') {
+                  window.scrollTo({ top: 0, behavior: 'smooth' })
+                } else {
+                  router.push('/')
+                }
+              }}
               className="flex items-center gap-3 group"
               aria-label="Atabekov — bosh sahifa"
             >
@@ -75,7 +91,7 @@ export default function Header() {
                 <button
                   key={key}
                   id={`nav-${key}`}
-                  onClick={() => scrollTo(key)}
+                  onClick={() => handleNavClick(key)}
                   className="nav-link"
                 >
                   {t.nav[key]}
@@ -122,7 +138,7 @@ export default function Header() {
             <button
               key={key}
               id={`mobile-nav-${key}`}
-              onClick={() => scrollTo(key)}
+              onClick={() => handleNavClick(key)}
               style={{ transitionDelay: `${i * 60}ms` }}
               className={`text-left px-4 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:bg-accent/10 hover:text-accent text-text-main dark:text-text-dark ${
                 mobileOpen ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'

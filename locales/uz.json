@@ -31,7 +31,7 @@
     "stat4Label": "Mamnun mijozlar"
   },
   "products": {
-    "tag": "Kollektion",
+    "tag": "Kolleksiya",
     "title": "Premium",
     "titleAccent": "Mahsulotlar",
     "subtitle": "Har bir mahsulot — san'at asari. Tabiiy xom ashyo va qadimiy retseptlar asosida.",
@@ -41,9 +41,19 @@
     "shelf": "Saqlash muddati",
     "ingredients": "Tarkibi",
     "orderBtn": "Buyurtma berish",
+    "searchPlaceholder": "Mahsulotlarni qidirish...",
+    "noResults": "Hech qanday mahsulot topilmadi",
+    "categories": {
+      "all": "Barchasi",
+      "boiled": "Pishirilgan",
+      "smoked": "Dudlangan",
+      "sausages": "Sosiskalar",
+      "grill": "Grill & BBQ"
+    },
     "items": [
       {
         "id": 1,
+        "category": "boiled",
         "name": "Doktor Kolbasa",
         "weight": "500g",
         "calories": "257 kcal/100g",
@@ -54,6 +64,7 @@
       },
       {
         "id": 2,
+        "category": "smoked",
         "name": "Premium Servelat",
         "weight": "300g",
         "calories": "320 kcal/100g",
@@ -64,6 +75,7 @@
       },
       {
         "id": 3,
+        "category": "sausages",
         "name": "Qo'y Sosiskasi",
         "weight": "400g",
         "calories": "215 kcal/100g",
@@ -74,6 +86,7 @@
       },
       {
         "id": 4,
+        "category": "grill",
         "name": "Mol Bifshteks",
         "weight": "600g",
         "calories": "187 kcal/100g",
@@ -84,6 +97,7 @@
       },
       {
         "id": 5,
+        "category": "smoked",
         "name": "Uy Kolbasasi",
         "weight": "700g",
         "calories": "298 kcal/100g",
@@ -94,6 +108,7 @@
       },
       {
         "id": 6,
+        "category": "sausages",
         "name": "Franfurt Sosiska",
         "weight": "250g",
         "calories": "265 kcal/100g",

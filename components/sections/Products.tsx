@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import { ArrowRight, Scale, Flame, Clock3, ListChecks, ShoppingBag } from 'lucide-react'
 import { useLang, type Translations } from '@/context/LangContext'
+import { useRouter } from 'next/navigation'
 
 function useScrollReveal() {
   const ref = useRef<HTMLDivElement>(null)
@@ -20,8 +21,9 @@ function useScrollReveal() {
   return ref
 }
 
-interface ProductItem {
+export interface ProductItem {
   id: number
+  category: string
   name: string
   weight: string
   calories: string
@@ -31,7 +33,7 @@ interface ProductItem {
   image: string
 }
 
-function ProductCard({ item, index, t }: { item: ProductItem; index: number; t: Translations }) {
+export function ProductCard({ item, index, t }: { item: ProductItem; index: number; t: Translations }) {
   const [hovered, setHovered] = useState(false)
 
   return (
@@ -40,17 +42,17 @@ function ProductCard({ item, index, t }: { item: ProductItem; index: number; t: 
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      {/* Image — overlaps card top */}
-      <div className="product-card-image pt-6 px-6">
+      {/* Image frame */}
+      <div className="product-card-image pt-5 px-5">
         <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-md">
           <Image
             src={item.image}
             alt={item.name}
             fill
-            className={`object-cover transition-transform duration-700 ${hovered ? 'scale-110' : 'scale-100'}`}
+            className={`object-cover transition-transform duration-750 ease-out ${hovered ? 'scale-108' : 'scale-100'}`}
             sizes="(max-width: 768px) 90vw, (max-width: 1200px) 45vw, 30vw"
           />
-          <div className={`absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent transition-opacity duration-300 ${hovered ? 'opacity-100' : 'opacity-60'}`} />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
 
           {/* Halal badge */}
           <div className="absolute top-3 left-3">
@@ -60,49 +62,47 @@ function ProductCard({ item, index, t }: { item: ProductItem; index: number; t: 
       </div>
 
       {/* Card body */}
-      <div className="px-6 pb-6 pt-4">
-        <h3 className="font-serif font-bold text-xl text-text-main dark:text-text-dark mb-1">
-          {item.name}
-        </h3>
-        <p className="text-sm text-text-muted dark:text-text-dark-muted mb-4 leading-relaxed">
-          {item.desc}
-        </p>
+      <div className="px-5 pb-5 pt-4 flex flex-col flex-grow justify-between">
+        <div>
+          <h3 className="font-serif font-bold text-xl text-text-main dark:text-text-dark mb-1 group-hover:text-primary transition-colors">
+            {item.name}
+          </h3>
+          <p className="text-xs text-text-muted dark:text-text-dark-muted mb-4 leading-relaxed line-clamp-2 min-h-[32px]">
+            {item.desc}
+          </p>
 
-        {/* Details — revealed on hover */}
-        <div className="product-card-details">
-          <div className="grid grid-cols-2 gap-2 mb-4">
-            {[
-              { icon: Scale, label: t.products.weight, value: item.weight },
-              { icon: Flame, label: t.products.calories, value: item.calories },
-              { icon: Clock3, label: t.products.shelf, value: item.shelf },
-              { icon: ListChecks, label: t.products.ingredients, value: item.ingredients },
-            ].map(({ icon: Icon, label, value }, i) => (
-              <div
-                key={i}
-                className={`flex items-start gap-2 p-2.5 rounded-xl bg-bg-main dark:bg-bg-dark border border-border-light dark:border-border-dark stagger-${i + 1}`}
-                style={{ animationDelay: `${i * 80}ms` }}
-              >
-                <Icon size={14} className="text-accent mt-0.5 flex-shrink-0" />
-                <div>
-                  <div className="text-[10px] text-text-muted dark:text-text-dark-muted uppercase tracking-wide">{label}</div>
-                  <div className="text-xs font-semibold text-text-main dark:text-text-dark leading-tight">{value}</div>
+          {/* Details Grid */}
+          <div className="product-card-details mb-4">
+            <div className="grid grid-cols-2 gap-2">
+              {[
+                { icon: Scale, label: t.products.weight, value: item.weight },
+                { icon: Flame, label: t.products.calories, value: item.calories },
+                { icon: Clock3, label: t.products.shelf, value: item.shelf },
+                { icon: ListChecks, label: t.products.ingredients, value: item.ingredients },
+              ].map(({ icon: Icon, label, value }, i) => (
+                <div
+                  key={i}
+                  className="flex items-start gap-1.5 p-2 rounded-xl bg-bg-main dark:bg-bg-dark border border-border-light dark:border-border-dark"
+                >
+                  <Icon size={13} className="text-accent mt-0.5 flex-shrink-0" />
+                  <div className="overflow-hidden">
+                    <div className="text-[9px] text-text-muted dark:text-text-dark-muted uppercase tracking-wider truncate">{label}</div>
+                    <div className="text-xs font-bold text-text-main dark:text-text-dark leading-tight truncate">{value}</div>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-
-          <button
-            id={`order-btn-${item.id}`}
-            className="btn-primary w-full justify-center text-sm py-3"
-          >
-            <ShoppingBag size={16} />
-            {t.products.orderBtn}
-            <ArrowRight size={14} className="btn-arrow ml-auto" />
-          </button>
         </div>
 
-        {/* Divider */}
-        <div className={`h-px bg-border-light dark:bg-border-dark mt-4 transition-all duration-300 ${hovered ? 'opacity-0' : 'opacity-100'}`} />
+        <button
+          id={`order-btn-${item.id}`}
+          className="btn-primary w-full justify-center text-xs py-2.5 font-semibold"
+        >
+          <ShoppingBag size={14} />
+          {t.products.orderBtn}
+          <ArrowRight size={12} className="btn-arrow ml-auto" />
+        </button>
       </div>
     </div>
   )
@@ -110,6 +110,7 @@ function ProductCard({ item, index, t }: { item: ProductItem; index: number; t: 
 
 export default function Products() {
   const { t } = useLang()
+  const router = useRouter()
   const titleRef = useScrollReveal()
   const gridRef = useScrollReveal()
 
@@ -141,15 +142,27 @@ export default function Products() {
           <div className="mt-6 mx-auto h-px w-24 bg-gradient-to-r from-transparent via-accent to-transparent" />
         </div>
 
-        {/* Products Grid */}
+        {/* Products Grid — Show first 3 products */}
         <div
           ref={gridRef}
           className="section-hidden grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
         >
-          {t.products.items.map((item, i) => (
+          {t.products.items.slice(0, 3).map((item, i) => (
             <ProductCard key={item.id} item={item as ProductItem} index={i} t={t} />
           ))}
         </div>
+
+        {/* View All Products CTA */}
+        <div className="text-center mt-16 animate-fadeIn">
+          <button
+            onClick={() => router.push('/products')}
+            className="btn-primary text-sm px-8 py-3.5 shadow-gold hover:shadow-gold/60"
+          >
+            <span>{t.hero.cta}</span>
+            <ArrowRight size={16} className="btn-arrow" />
+          </button>
+        </div>
+
       </div>
     </section>
   )

@@ -41,13 +41,22 @@
     "shelf": "Shelf Life",
     "ingredients": "Ingredients",
     "orderBtn": "Order Now",
+    "searchPlaceholder": "Search products...",
+    "noResults": "No products found",
+    "categories": {
+      "all": "All",
+      "boiled": "Boiled",
+      "smoked": "Smoked",
+      "sausages": "Sausages",
+      "grill": "Grill & BBQ"
+    },
     "items": [
-      { "id": 1, "name": "Doctor Sausage", "weight": "500g", "calories": "257 kcal/100g", "shelf": "15 days", "ingredients": "Beef, spices, natural casing", "desc": "Classic and delicious, the centerpiece of any table.", "image": "https://images.unsplash.com/photo-1541518763669-27fef04b14ea?w=600&q=80" },
-      { "id": 2, "name": "Premium Cervelat", "weight": "300g", "calories": "320 kcal/100g", "shelf": "20 days", "ingredients": "Lamb, spices, natural casing", "desc": "Italian-style premium dry sausage.", "image": "https://images.unsplash.com/photo-1558030006-450675393462?w=600&q=80" },
-      { "id": 3, "name": "Lamb Sausage", "weight": "400g", "calories": "215 kcal/100g", "shelf": "10 days", "ingredients": "100% lamb, onion, spices", "desc": "Traditional Uzbek flavor, juicy and aromatic.", "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80" },
-      { "id": 4, "name": "Beef Steak", "weight": "600g", "calories": "187 kcal/100g", "shelf": "7 days", "ingredients": "Premium beef, salt, spices", "desc": "Grill-ready premium quality cut.", "image": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=600&q=80" },
-      { "id": 5, "name": "Home Sausage", "weight": "700g", "calories": "298 kcal/100g", "shelf": "12 days", "ingredients": "Mixed meat, garlic, natural casing", "desc": "Made with a home-style recipe, traditional taste.", "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" },
-      { "id": 6, "name": "Frankfurt Sausage", "weight": "250g", "calories": "265 kcal/100g", "shelf": "14 days", "ingredients": "Beef and lamb, smoked, natural", "desc": "Loved by kids and adults alike — classic taste.", "image": "https://images.unsplash.com/photo-1432139509613-5c4255815697?w=600&q=80" }
+      { "id": 1, "category": "boiled", "name": "Doctor Sausage", "weight": "500g", "calories": "257 kcal/100g", "shelf": "15 days", "ingredients": "Beef, spices, natural casing", "desc": "Classic and delicious, the centerpiece of any table.", "image": "https://images.unsplash.com/photo-1541518763669-27fef04b14ea?w=600&q=80" },
+      { "id": 2, "category": "smoked", "name": "Premium Cervelat", "weight": "300g", "calories": "320 kcal/100g", "shelf": "20 days", "ingredients": "Lamb, spices, natural casing", "desc": "Italian-style premium dry sausage.", "image": "https://images.unsplash.com/photo-1558030006-450675393462?w=600&q=80" },
+      { "id": 3, "category": "sausages", "name": "Lamb Sausage", "weight": "400g", "calories": "215 kcal/100g", "shelf": "10 days", "ingredients": "100% lamb, onion, spices", "desc": "Traditional Uzbek flavor, juicy and aromatic.", "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80" },
+      { "id": 4, "category": "grill", "name": "Beef Steak", "weight": "600g", "calories": "187 kcal/100g", "shelf": "7 days", "ingredients": "Premium beef, salt, spices", "desc": "Grill-ready premium quality cut.", "image": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=600&q=80" },
+      { "id": 5, "category": "smoked", "name": "Home Sausage", "weight": "700g", "calories": "298 kcal/100g", "shelf": "12 days", "ingredients": "Mixed meat, garlic, natural casing", "desc": "Made with a home-style recipe, traditional taste.", "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" },
+      { "id": 6, "category": "sausages", "name": "Frankfurt Sausage", "weight": "250g", "calories": "265 kcal/100g", "shelf": "14 days", "ingredients": "Beef and lamb, smoked, natural", "desc": "Loved by kids and adults alike — classic taste.", "image": "https://images.unsplash.com/photo-1432139509613-5c4255815697?w=600&q=80" }
     ]
   },
   "advantages": {
